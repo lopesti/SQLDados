@@ -1,0 +1,83 @@
+# ============================================
+# DADOS DO SQL SERVER (NUNCA COMMITAR)
+# ============================================
+data/
+backups/
+*.mdf
+*.ldf
+*.ndf
+*.bak
+*.trn
+*.bin
+
+# ============================================
+# SEGREDOS E CONFIGURAÇÕES LOCAIS
+# ============================================
+.env
+.env.*
+!.env.example
+*.env
+docker-compose.override.yml
+docker-compose.local.yml
+*.pem
+*.key
+*.crt
+
+# ============================================
+# LOGS
+# ============================================
+*.log
+logs/
+*.out
+
+# ============================================
+# DEPENDÊNCIAS (Node, Python, etc.)
+# ============================================
+node_modules/
+venv/
+__pycache__/
+*.pyc
+package-lock.json
+
+# ============================================
+# BUILD E ARTEFATOS
+# ============================================
+dist/
+build/
+target/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# ============================================
+# IDEs E EDITORES
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vs/
+
+# ============================================
+# SISTEMA OPERACIONAL
+# ============================================
+Thumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+*.tmp
+
+# ============================================
+# SCHEMASPY (gerado automaticamente)
+# ============================================
+docs/schemaspy-*/
+docs/schemaspy*/
+
+# ============================================
+# BACKUPS LOCAIS DE DOCUMENTAÇÃO
+# ============================================
+*.bak.html
+*.old
+*.orig

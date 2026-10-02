@@ -1,0 +1,24 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sql-treino
+    hostname: sql-treino
+    user: root
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=771216bB@@@
+      - MSSQL_PID=Developer
+    ports:
+      - "1433:1433"
+    volumes:
+      - C:\SQLDados\data:/var/opt/mssql/data
+      - C:\SQLDados\backups:/var/opt/mssql/backup
+      - C:\SQLDados\scripts:/scripts
+    networks:
+      - treino-network
+    restart: unless-stopped
+
+networks:
+  treino-network:
+    name: treino-network
+    driver: bridge
